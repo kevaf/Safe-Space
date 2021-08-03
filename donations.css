@@ -1,6 +1,5 @@
-.donatepage{
+body{
     background-color: #008078;
-    height: 570px;
 }
 #logos{
     background-color: black;
@@ -16,12 +15,20 @@
     margin-top: -17px;
     margin-left: 30px;
 }
+.donateheader img{
+    width: 70%;
+}
+
+
 .donatepage{
     display: flex;
 }
 .formtop{
     background-color: grey;
     padding-top: 2px;
+}
+#dlogo{
+    margin-top: 10px;
 }
  #ksh {
     margin-top: -19px;
@@ -39,9 +46,11 @@
  }
  #damount{
      margin-left: 50%;
-     margin-top: -55px;
+     margin-top: -60px;
  }
  form{
      background-color: wheat;
      margin-top: -18px;
- }
+     padding: 40px;
+     
+ } 
