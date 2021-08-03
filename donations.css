@@ -1,0 +1,47 @@
+.donatepage{
+    background-color: #008078;
+    height: 570px;
+}
+#logos{
+    background-color: black;
+   width: 50px;
+    color: white;
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    text-align: center;
+    margin-left: 20px;
+    
+}
+#logosp{
+    margin-top: -17px;
+    margin-left: 30px;
+}
+.donatepage{
+    display: flex;
+}
+.formtop{
+    background-color: grey;
+    padding-top: 2px;
+}
+ #ksh {
+    margin-top: -19px;
+    margin-left: 5px;
+    font-size:small;
+ }
+ #don{
+     margin-top: -30px;
+     margin-left: 35px;
+     font-size:large;
+ }
+ #ydo{
+    font-size:large;
+    color: white;
+ }
+ #damount{
+     margin-left: 50%;
+     margin-top: -55px;
+ }
+ form{
+     background-color: wheat;
+     margin-top: -18px;
+ }
