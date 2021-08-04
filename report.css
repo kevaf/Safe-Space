@@ -120,7 +120,7 @@ body{
 #submit-btn{
     margin-top: 30px;
     margin-left: 600px;
-    background: transparent;
+    background: lightblue;
     color: #fff;
     width: 150px;
     border:  1px solid grey;
@@ -130,9 +130,7 @@ body{
 
 }
 
-.body {
-    background-image: url(./assets/abuse.jpg);
-}
+
 .footer-container {
     background-color: black;
     padding-bottom: 4rem;
