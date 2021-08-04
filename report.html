@@ -8,6 +8,7 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"   rel="stylesheet">
+    <script src="js/jquery-3.6.0.js"></script>
     <link rel ="stylesheet" href="report.css">
    
 
@@ -37,22 +38,22 @@
             <div id="form">
                 <h1 class="text-white text-center">Report Here</h1>
 
-
+            <div class="col-sm-6">
             <div id="first-group">
 
                   <div class="content">
                     <i class="fa fa-user" aria-hidden="true"></i>
-                    <input type="text" id="input-group" placeholder="First name">
+                    <input type="text" id="name1" placeholder="First name" required>
                   </div>
 
                   <div class="content">
                     <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <input type="text" id="input-group" placeholder="Location">
+                    <input type="text" id="name2" placeholder="Location" required>
                   </div>
 
                   <div class="content">
                     <i class="fa fa-info-circle" aria-hidden="true"></i>
-                   <select id="input-group" style="background: black;">
+                   <select id="case1" style="background: black;" required>
                     <option value="">Case to report</option>
                     <option value="">Molestation</option>
                        <option value="">Groping</option>
@@ -62,25 +63,28 @@
 
                   <div class="content">
                     <i class="fa fa-phone" aria-hidden="true"></i>
-                    <input type="number" id="input-group" placeholder="phone number">
+                    <input type="number" id="input-group" placeholder="phone number" required>
                   </div>
 
                   <div class="content">
                     <i class="fa fa-calendar" aria-hidden="true"></i>
-                    <input type="date" id="input-group" placeholder="case reporting date">
+                    <input type="date" id="input-group" placeholder="case reporting date" required>
                   </div>
                 </div>
+            
+             
+           
                 <div id="second-group">
 
                     <div class="content">
                         <i class="fa fa-user" aria-hidden="true"></i>
-                        <input type="text" id="input-group" placeholder="Last name">
+                        <input type="text" id="input-group" placeholder="Last name" required>
                       </div>  
 
 
                   <div class="content">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <input type="text" id="input-group" placeholder="Email">
+                    <input type="text" id="input-group" placeholder="Email" required>
                   </div>
 
                   <div class="content">
@@ -92,25 +96,21 @@
                        <option value="">Other</option>
                    </select>
                 </div>
-                  
-                  <div class="content">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    <input type="number" id="input-group" placeholder="phone number">
-                  </div>
                    
                   <div class="content">
                     <i class="fa fa-user" aria-hidden="true"></i>
-                    <input type="number" id="input-group" placeholder="Age">
+                    <input type="number" id="input-group" placeholder="Age" required>
                   </div> 
 
                 </div>
+            </div>
                 <button type="submit" value="submit" id="submit-btn">Report now</button>
             </div>
         </div>
     </div>
     <div id="report">
         <h1>Safe Space</h1>
-        <p> <span class="person1"></span> and <span class="person2"></span> were walking through the woods, when suddenly a giant <span class="animal"></span> appeared. "<span class="exclamation"></span>", <span class="person1"></span> cried. The two of them <span class="verb"></span> as quickly possible, and when they were safe, <span class="person1"></span> and <span class="person2"></span> gave each other a giant <span class="noun"></span>.</p>
+        <p> Hello<span class="name1"></span> we have recorded the <span class="case"></span> we shall get back to you after a day.</p>
      </div>
 
 
