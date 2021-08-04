@@ -8,19 +8,24 @@ $(document).ready(function(){
             alert("Choose All Options")
         }
         else if(clickedAmount=="100" && typedAmount==""){
-            document.getElementById("don").innerHTML=100 + " via " + paymentOption
+            document.getElementById("don").innerHTML=100 
+            alert("Thank You for your "+paymentOption +" Donation" )
         }
         else if(clickedAmount=="200" && typedAmount==""){
-            document.getElementById("don").innerHTML=200 + " via " + paymentOption
+            document.getElementById("don").innerHTML=200 
+            alert("Thank You for your "+paymentOption +" Donation" )
         }
         else if(clickedAmount=="500" && typedAmount==""){
-            document.getElementById("don").innerHTML=500 + " via " + paymentOption
+            document.getElementById("don").innerHTML=500 
+            alert("Thank You for your "+paymentOption +" Donation" )
         }
         else if(clickedAmount=="1000" && typedAmount==""){
-            document.getElementById("don").innerHTML=1000 + " via " + paymentOption
+            document.getElementById("don").innerHTML=1000 
+            alert("Thank You for your "+paymentOption +" Donation" )
         }
         else if(typedAmount>0 && clickedAmount==""){
-            document.getElementById("don").innerHTML=typedAmount + " via " + paymentOption
+            document.getElementById("don").innerHTML=typedAmount 
+            alert("Thank You for your "+paymentOption +" Donation" )
         }
         
     })
