@@ -33,14 +33,13 @@
     </header>
     <!--header section ends!-->
     <!-- <div class="col-sm-6"> -->
-    <div class="container">
+    <form class="container">
         <div class="form-group">
             <div id="form">
-                <h1 class="text-white text-center">Report Here</h1>
+                <h1 class="text-white text-center">Report<span class="title">  Here</span> </h1>
 
-            <div class="col-sm-6">
+            
             <div id="first-group">
-
                   <div class="content">
                     <i class="fa fa-user" aria-hidden="true"></i>
                     <input type="text" id="name1" placeholder="First name" required>
@@ -56,9 +55,13 @@
                    <select id="case1" style="background: black;" required>
                     <option value="">Case to report</option>
                     <option value="">Molestation</option>
-                       <option value="">Groping</option>
-                       <option value="">Sexual Child Abuse</option>
+                    <option value="">Groping</option>
+                    <option value="">Sexual Child Abuse</option>
                    </select>
+                  </div>
+                  
+                  <div class="content">
+                     <textarea id="input-group" value="textarea" placeholder="More details here..." required></textarea>
                   </div>
 
                   <div class="content">
@@ -84,12 +87,12 @@
 
                   <div class="content">
                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <input type="text" id="input-group" placeholder="Email" required>
+                    <input type="email" id="input-group" placeholder="Email" required>
                   </div>
 
                   <div class="content">
                     <i class="fa fa-info-circle" aria-hidden="true"></i>
-                   <select id="input-group" style="background: black;">
+                   <select id="input-group" style="background: black;" required>
                     <option value="">Choose Gender</option>
                     <option value="">Male</option>
                        <option value="">Female</option>
@@ -101,16 +104,17 @@
                     <i class="fa fa-user" aria-hidden="true"></i>
                     <input type="number" id="input-group" placeholder="Age" required>
                   </div> 
-
+                 
                 </div>
-            </div>
                 <button type="submit" value="submit" id="submit-btn">Report now</button>
             </div>
+                
+            </div>
         </div>
-    </div>
+    </form>
     <div id="report">
         <h1>Safe Space</h1>
-        <p> Hello<span class="name1"></span> we have recorded the <span class="case"></span> we shall get back to you after a day.</p>
+        <p> Hello<span class="name1"></span> we have recorded the <span class="case1"></span>case we shall get back to you after a day.</p>
      </div>
 
 
