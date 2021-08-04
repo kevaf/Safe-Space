@@ -4,6 +4,9 @@
     list-style: none;
     text-decoration: none;
 }
+body {
+    background-image: url('https://unsplash.com/photos/7QLz-z0q7dU');
+}
 .header {
     width: 100%;
     height: 80px;
