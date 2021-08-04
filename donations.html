@@ -10,25 +10,10 @@
     <link rel="stylesheet" href="/bootstrap.min.css">
     <link rel="stylesheet" href="donations.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./donations.js"></script>
 </head>
 <body>
-    <!--header section starts-->
-    <header>
-        <div class="header">
-            <div class="inner_header">
-                <div class="logo_container">
-                    <h1>SAFE <span>SPACE</span></h1>
-                </div>
-                <ul class="navigation">
-                    <a><li>HOME</li></a>
-                    <a><li>FAQ</li></a>
-                    <a><li>REPORT</li></a>
-                    <a><li>DONATION</li></a>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <!--header section ends!-->
+    
     <div class="container" id="donatepage">
         <div class="row">
             <div class="col-sm-6">
@@ -51,25 +36,29 @@
                         <div id="damount">
                                 <p id="ydo">Your Donation</p>
                                 <p id="ksh">Kshs</p>
-                                <p id="don">100</p>
+                                <p id="don"></p>
                         </div>
                     </div>
             </div>
                     <form action="">
-                    <label for="">Select Donation Amount</label><br>
-                    <input type="button" value="Kshs 100" id="amtbtn">
-                    <input type="button" value="Kshs 200" id="amtbtn1">
-                    <input type="button" value="Kshs 500" id="amtbtn2">
-                    <input type="button" value="Kshs 1000" id="amtbtn3"><br><br>
+                        <label for="">Select Amount</label><br>
+                        <select name="" id="clickVal" type="number">
+                            <option value="">Choose Amount to Donate</option>
+                            <option value="100">Ksh 100</option>
+                            <option value="200">Ksh 200</option>
+                            <option value="500">Ksh 500</option>
+                            <option value="1000">Ksh 1000</option>
+                        </select><br><br>
                     <label for="">Or Choose Amount</label><br>
-                    <input type="text" name="" id="amt" placeholder="Amount in Kshs" size="13"><br><br>
+                    <input type="number" id="amt" placeholder="Amount in Kshs" size="13"><br><br>
                     <label for="">Payement Method</label><br>
                     <select name="" id="payment">
-                        <option value="mpesa">M-PESA</option>
-                        <option value="card">Card</option>
-                        <option value="paypal">Pay-pal</option>
+                        <option value="">Choose Payment Option</option>
+                        <option value="M-PESA">M-PESA</option>
+                        <option value="Card">Card</option>
+                        <option value="Pay-pal">Pay-pal</option>
                     </select><br><br>
-                    <input type="button" value="        Make Donation      " id="donbtn">
+                    <input type="button" value="        Make Donation      " id="donbtn" onclick="myDonation()">
                 </form>
             </div>
     
@@ -77,8 +66,6 @@
             </div>
         </div>
     </div>
-    
-</body>
 <!--footer section starts-->
 <footer>
     <div class="footer-container">
@@ -104,19 +91,10 @@
                 <a href="#">Facebook</a>
                 <a href="#">Youtube</a>
             </div>
-            <div class="footer-email-form">
-                <h2>Join our organization</h2>
-                <input type="email" placeholder="Enter your email address" id="footer-email">
-                <input type="submit" value="Sign up" id="footer-email-btn">
-            </div>
+            
         </div>
     </div>
 </footer>
-<!--footer section ends-->
-
-
-
-
-
-
+<!--footer section ends-->    
+</body>
 </html>

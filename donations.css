@@ -1,50 +1,6 @@
 body{
     background-color: #008078;
 }
-/* header */
-.header {
-    width: 100%;
-    height: 80px;
-    display: block;
-    background-color: black;
-}
-.inner_header {
-    width: 1000px;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
-}
-.logo_container {
-    height: 100%;
-    display: table;
-    float: left;
-}
-.logo_container h1{
-    color:white;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-}
-.logo_container h1 span {
-    font-weight: 800;
-}
-.navigation {
-    float: right;
-    height: 100%;
-}
-.navigation a {
-    height: 100%;
-    display: table;
-    float: left;
-    padding: 0px 20px;
-}
-.navigation a li {
-    display: table-cell;
-    vertical-align: middle;
-    height: 100%;
-    color: white;
-}
-/* header end */
 
 #logos{
     background-color: black;
@@ -71,6 +27,7 @@ body{
 .formtop{
     background-color: grey;
     padding-top: 2px;
+    height: 100px;
 }
 #dlogo{
     margin-top: 10px;
@@ -107,7 +64,7 @@ body{
     background-color:#008078;
     color: white;
 }
-/* footer start */
+/* footer */
 .footer-container {
     background-color: black;
     padding-bottom: 4rem;
@@ -122,6 +79,7 @@ body{
     flex-wrap: wrap;
     margin: 0 auto;
     padding-top: 4rem;
+    /* padding-bottom: 18rem; */
 }
 .footer-heading {
     display: flex;
@@ -192,4 +150,3 @@ body{
         margin-top: 2rem;
     }
 }
-/* footer end */
