@@ -5,6 +5,11 @@
 body {
     background-color: #008078;
 }
+#splogo{
+    height: 70px;
+    padding: 10px;
+    margin-left: 20px;
+}
 .header {
     display: flex;
     justify-content: space-between;
@@ -14,6 +19,7 @@ body {
 }
 .logo_container {
     color: white;
+
 }
 .navigation ul {
     margin: 0;
