@@ -5,6 +5,10 @@
 body{
     background-color: #008078;
 }
+#box{
+    height: 550px;
+    padding: 5%;
+}
 h1{
     margin-top: 25px;
     color: azure;
