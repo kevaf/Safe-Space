@@ -28,7 +28,7 @@
 .navigation li a {
     text-decoration: none;
     color: white;
-    padding: 20px;
+    padding: 10px;
     display: block;
 }
 .navigation li a:hover {
@@ -166,7 +166,7 @@ margin: 60px;
   .order-overlay{
     background-color: #008078;
     /* margin-left: -5%; */
-    margin-right: 40px;
+    margin: 20px;
     padding-bottom: 20px;
     padding-left: 6%;
   }
@@ -310,7 +310,7 @@ margin: 60px;
 
 .footer-container {
     background-color: black;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 }
 .footer {
     width: 80%;
@@ -382,14 +382,20 @@ margin: 60px;
 @media screen and (max-width:820px) {
     .footer{
         padding-top: 2rem;
+       
     }
 }
 @media screen and (max-width:720px) {
    
     .footer-3{
         display: none;
+        
+    }
+    .footer{
+        background-color: black;
     }
     .footer-email-form{
         margin-top: 2rem;
+       
     }
 }
