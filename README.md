@@ -27,4 +27,6 @@ You can reach out to any of the developers through their emails:
 - mbairemunge@gmail.com
 - carlosiamcarl@gmail.com
 - kevinkipyegon20@gmail.com
-## Licence
+
+## License
+
