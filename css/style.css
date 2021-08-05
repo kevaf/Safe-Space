@@ -59,10 +59,11 @@ body {
 .intro {
     color: white;
     padding-bottom: 4rem;
-    padding-right: 10rem;
+    padding-right: 4rem;
     padding-top: 4rem;
     text-align: center;
     background-color:#008078;
+    margin-left: 4rem;
 }
 .about {
     text-align: center;
