@@ -2,52 +2,51 @@
     margin: 0;
     padding: 0;
 }
-body{
-    background-Color: #008078;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .header {
-    width: 100%;
-    height: 80px;
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: black;
-}
-.inner_header {
-    width: 1000px;
-    height: 100%;
-    display: block;
-    margin: 0 auto;
-}
-.heading{
-    text-align: center;
-    font-size: 3.5rem;
-    padding: 1rem;
-    color: #666;
-}
-.heading span{
     color: white;
 }
 .logo_container {
-    height: 100%;
-    display: table;
-    float: left;
+    color: white;
 }
-.logo_container h1{
-    color:white;
+.navigation ul {
+    margin: 0;
+    display: flex;
+}
+.navigation li {
+    list-style: none;
+}
+.navigation li a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+.navigation li a:hover {
+    color: red;
+}
+white_check_mark
+eyes
+raised_hands
+
+
+
+
+
+
+/*.logo_container h1{
+    color: black;
     height: 100%;
     display: table-cell;
     vertical-align: middle;
 }
 .logo_container h1 span {
     font-weight: 800;
-}
-.navigation {
-    float: right;
-    height: 100%;
-}
+}*/
 .navigation a {
     height: 100%;
     display: table;
@@ -60,32 +59,22 @@ body{
     height: 100%;
     color: white;
 }
-.intro {
-    color: white;
-    padding-bottom: 4rem;
-    padding-right: 10rem;
-    padding-top: 4rem;
-    text-align: center;
-    background-color: black;
-}
-.about {
-    text-align: center;
-    color: white;
-    background-color: black;
-}
+
 
 .fast1{
   
     background-color: whitesmoke;
-    width: 270px;
     border: 10px solid whitesmoke;
     padding: 2px 2px 2px px;
     box-shadow: 2px 3px 8px grey;
     float: left;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     
 }
+
+
 
 #text{
     background-color: whitesmoke;
@@ -124,9 +113,10 @@ body{
 #form{
     background-color: #000;
     height: 600px;
-    width: 1000px;
+    /* width: 1000px; */ 
     margin: auto;
     margin-top: 100px;
+    margin-bottom: 100px;
     opacity: 0.7;
     color: white;
     box-shadow: grey rgb(0, 0, 0, 0.3);
@@ -140,12 +130,90 @@ body{
 }
 #first-group{
     border: 2px solid blue;
-    width: 400px;
+    /* width: 400px; */
     margin-top: 38px;
     margin-left: 10px;
     font-size: 2.0rem;
     position: absolute;
 }
+.order{
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: black;
+    padding-top: 4%;
+    padding-bottom: 4%;
+  }
+  .order-overlay{
+    background-color: rgba(119, 115, 115, 0.8);
+    margin-left: 2%;
+    margin-right: 2%;
+    padding-bottom: 20px;
+    padding-left: 6%;
+  }
+  .choise{
+    display: none;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .deliver{
+    display: none;
+  }
+  .delivery{
+    display: none;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  td,th{
+    font-size: 20px;
+    color: white;
+  }
+  .choise h2{
+    color:white;
+    text-align: left;
+  }
+  #your-orders{
+    color: white;
+    font-size: 30px;
+  }
+  
+  #contact h2{
+    text-align: center;
+  }
+  #contact{
+    color: black;
+  }
+  #contactdetails h2{
+    text-align: left;
+  }
+
+  .order h2{
+    text-align: center;
+    font-size: 20px;
+  }
+  
+  #addedprice{
+    display: none;
+  }
+  #finallmessage{
+    display: none;
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: 28px;
+  }
+  #regards{
+    text-align: center;
+    color: aliceblue;
+  }
+  #information{
+    padding-top: 5%;
+    font-size: 22px;
+    padding-right: 8%;
+    padding-left: 5%;
+    color: black;
+  }
 .content{
     border: 1px solid #fff;
     margin: 10px;
@@ -157,7 +225,7 @@ body{
     outline: none;
     background: transparent;
     margin-left: 8px;
-    width: 300px;
+    /* width: 300px; */
     color: #fff;
 }
 .content #name1, #case1, #name2, #phone-no, #name3, #email1, #age1{
@@ -165,7 +233,7 @@ body{
     outline: none;
     background: transparent;
     margin-left: 8px;
-    width: 300px;
+    /* width: 300px; */
     color: #fff;
 }
 
@@ -182,17 +250,17 @@ body{
 }
 #second-group{
     border: 2px solid blue;
-    width: 400px;
+    /* width: 400px; */
     margin-top: 47px;
     font-size: 2.0rem; 
     margin-left: 410px;
 }
 #submit-btn{
-    margin-top: 80px;
-    margin-left: 500px;
+    /* margin-top: 80px;
+    margin-left: 500px; */
     background: lightblue;
     color: #fff;
-    width: 150px;
+    /* width: 150px; */
     border:  1px solid grey;
     outline: none;
     padding: 10px;
@@ -287,6 +355,7 @@ body{
     }
 }
 @media screen and (max-width:720px) {
+   
     .footer-3{
         display: none;
     }
