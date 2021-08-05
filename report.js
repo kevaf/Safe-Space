@@ -74,7 +74,7 @@ $(document).ready(function(){
       // constractor function
       var newOrder = new addCase(pname,pfname, pgender, page,ptopping,total);
 
-      $("#info-given").append('<tr><td id="casename">'+newOrder.name +'</td><td id="gendername">' +newOrder.gender +'</td><td id="agebracket">' + newOrder.age + '</td><td id="agebracket">'+newOrder.age + '</td><td id="who">'+newOrder.topping+'</td></tr>');
+      $("#info-given").append('<tr><td id="casename">'+newOrder.name +'</td><td id="gendername">' +newOrder.gender +'</td><td id="who">' + newOrder.person + '</td><td id="agebracket">'+newOrder.age + '</td><td id="who">'+newOrder.topping+'</td></tr>');
       console.log(newOrder);
       
       
