@@ -4,14 +4,25 @@
 
 var price , crust_price, topping_price;
 let total = 0;
-function addCase( name,gender,age,topping, firstname ){
+function addCase( name,gender,age,topping, firstname, location, phone){
   this.case = name;
   this.gender = gender;
   this.age = age;
   this.topping = topping;
   this.person = firstname;
+  this.location = location;
+  this.phone = phone;
+ 
 }
+ function validate(){
 
+  if(name.value == 0 || gender.value == 0 || age.value == 0 || firstname =="" || location ==""){
+    alert("Confirm all fields has values")
+}
+// else if(phone.length < 9){
+//     alert("Phone should more than 9 digits")
+// }
+ }
 
 // proceed button
 $(document).ready(function(){
@@ -21,6 +32,7 @@ $(document).ready(function(){
   //   $("div.choise").slideDown(1000);
   // });
   $("button.proceed").click(function(event){
+   
    let pname = $(".name option:selected").val();
    let pgender = $("#gender option:selected").val();
    let page = $("#age option:selected").val();
@@ -32,7 +44,7 @@ $(document).ready(function(){
    console.log(ptopping.join(", "));
 
    
-    let topping_value = ptopping.length*50;
+    let topping_value = ptopping.length;
     console.log("toppins value" + topping_value);
 
     if((pname == "") && (pgender == "" )){
@@ -49,10 +61,10 @@ $(document).ready(function(){
       $("div.choise").slideDown(1000);
     }
 
-    total = price + crust_price + topping_value;
-    console.log(total);
-    let checkoutTotal =0;
-    checkoutTotal = checkoutTotal + total;
+    // total = price + crust_price + topping_value;
+    // console.log(total);
+    // let checkoutTotal =0;
+    // checkoutTotal = checkoutTotal + total;
 
     $("#pizzaname").html($(".name option:selected").val());
     $("#pizzasize").html( $("#size option:selected").val());
@@ -74,34 +86,35 @@ $(document).ready(function(){
       // constractor function
       var newOrder = new addCase(pname,pfname, pgender, page,ptopping,total);
 
-      $("#info-given").append('<tr><td id="casename">'+newOrder.name +'</td><td id="gendername">' +newOrder.gender +'</td><td id="who">' + newOrder.person + '</td><td id="agebracket">'+newOrder.age + '</td><td id="who">'+newOrder.topping+'</td></tr>');
+      $("#info-given").append('<tr><td id="casename">'+newOrder.case +'</td><td id="gendername">' +newOrder.gender +'</td><td id="who">' + newOrder.person + '</td><td id="agebracket">'+newOrder.age + '</td><td id="who">'+newOrder.topping+'</td></tr>');
       console.log(newOrder);
       
       
 
     });
-    // Checkout button
+    // Logout button
     $("button#checkout").click(function(){ 
       $("button#checkout").hide();
       $("button.addCase").hide();
+      $("button.proceed").show();
       $("button.deliver").slideDown(1000);
       $("#addedprice").slideDown(1000);
       console.log("Your total bills is sh. "+checkoutTotal);
       $("#casestotal").append("Your case of "+newOrder.name+  "has been recieved");
     });
 
-    // home delivery button
-    $("button.deliver").click(function(){
-      $(".casestable").hide();
-      $(".choise h2").hide();
-      $(".delivery").slideDown(1000);
-      $("#addedprice").hide();
-      $("button.deliver").hide();
-      $("#casestotal").hide();
-      let deliceryamount= checkoutTotal+150;
-      console.log("You will pay sh. "+deliceryamount+" on delivery");
-      $("#totalbill").append("Your bill plus delivery fee is: "+deliceryamount);
-    });
+    // // home delivery button
+    // $("button.deliver").click(function(){
+    //   $(".casestable").hide();
+    //   $(".choise h2").hide();
+    //   $(".delivery").slideDown(1000);
+    //   $("#addedprice").hide();
+    //   $("button.deliver").hide();
+    //   $("#casestotal").hide();
+    //   let deliceryamount= checkoutTotal+150;
+    //   console.log("You will pay sh. "+deliceryamount+" on delivery");
+    //   $("#totalbill").append("Your bill plus delivery fee is: "+deliceryamount);
+    // });
 
     // when one clicks place order button
     $("button#final-order").click(function(event){
@@ -110,7 +123,7 @@ $(document).ready(function(){
       $("#pizzatotal").hide();
       $(".delivery").hide();
       $("button#final-order").hide();
-      let deliceryamount= checkoutTotal+150;
+      let deliceryamount= checkoutTotal;
       console.log("Final Bill is: "+deliceryamount);
       let person = $("input#name").val();
       let phone = $("input#phone").val();
