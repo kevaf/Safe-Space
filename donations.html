@@ -16,7 +16,7 @@
    <!--header section starts-->
    <div class="header">
     <div class="logo_container">
-        <h1>SAFE <span>SPACE</span></h1>
+        <h1><img src="./Assets/Group 1.png" alt="" id="splogo"></h1>
     </div>
     <div class="navigation">
         <ul>
@@ -57,7 +57,7 @@
             </div>
                     <form action="">
                         <label for="">Select Amount</label><br>
-                        <select name="" id="clickVal" type="number">
+                        <select name="" id="clickVal" type="number" class="form-control">
                             <option value="">Choose Amount to Donate</option>
                             <option value="100">Ksh 100</option>
                             <option value="200">Ksh 200</option>
@@ -65,15 +65,15 @@
                             <option value="1000">Ksh 1000</option>
                         </select><br><br>
                     <label for="">Or Choose Amount</label><br>
-                    <input type="number" id="amt" placeholder="Amount in Kshs" size="13"><br><br>
+                    <input type="number" id="amt" placeholder="Amount in Kshs" size="13" class="form-control"><br><br>
                     <label for="">Payement Method</label><br>
-                    <select name="" id="payment">
+                    <select name="" id="payment" class="form-control">
                         <option value="">Choose Payment Option</option>
                         <option value="M-PESA">M-PESA</option>
                         <option value="Card">Card</option>
                         <option value="Pay-pal">Pay-pal</option>
                     </select><br><br>
-                    <input type="button" value="        Make Donation      " id="donbtn" onclick="myDonation()">
+                    <input type="button" value="        Make Donation      " class="btn btn-primary mb-2" id="donbtn" onclick="myDonation()">
                 </form>
             </div>
     
@@ -82,34 +82,37 @@
         </div>
     </div>
     <!--footer section starts-->
-        <footer>
-            <div class="footer-container">
-                <div class="footer">
-                    <div class="footer-heading footer-1">
-                        <h2>ABOUT US</h2>
-                        <a href="#">Blog</a>
-                        <a href="#">Contacts</a>
-                        <a href="#">Investors</a>
-                        <a href="#">Terms of Service</a>
-                    </div>
-                    <div class="footer-heading footer-2">
-                        <h2>CONTACT US </h2>
-                        <a href="#">Jobs</a>
-                        <a href="#">Support</a>
-                        <a href="#">Contact</a>
-                        <a href="#">Sponsorship</a>
-                    </div>
-                    <div class="footer-heading footer-3">
-                        <h2>SOCIAL MEDIA</h2>
-                        <a href="#">Instagram</a>
-                        <a href="#">Twitter</a>
-                        <a href="#">Facebook</a>
-                        <a href="#">Youtube</a>
-                    </div>
-                   
-                </div>
-            </div>
-        </footer>
-        <!--footer section ends-->  
+  <footer>
+    <div class="footer-container">
+      <div class="footer">
+        <div class="footer-heading footer-1">
+          <h2>ABOUT US</h2>
+          <a href="#">Blog</a>
+          <a href="#">Contacts</a>
+          <a href="#">Investors</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-heading footer-2">
+          <h2>CONTACT US </h2>
+          <a href="#">Jobs</a>
+          <a href="#">Support</a>
+          <a href="#">Contact</a>
+          <a href="#">Sponsorship</a>
+        </div>
+        <div class="footer-heading footer-3">
+          <h2>SOCIAL MEDIA</h2>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">Facebook</a>
+          <a href="#">Youtube</a>
+        </div>
+        <div class="footer-email-form">
+          <h2>Join our organization</h2>
+          <input type="email" placeholder="Enter your email address" id="footer-email">
+          <input type="submit" value="Sign up" id="footer-email-btn">
+        </div>
+      </div>
+    </div>
+  
 </body>
 </html>

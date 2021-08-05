@@ -11,6 +11,7 @@ body {
     align-items: center;
     background-color: black;
     color: white;
+    
 }
 .logo_container {
     color: white;
@@ -25,7 +26,7 @@ body {
 .navigation li a {
     text-decoration: none;
     color: white;
-    padding: 20px;
+    padding: 10px;
     display: block;
 }
 .navigation li a:hover {
@@ -41,7 +42,11 @@ body {
     border-bottom-right-radius: 25%;
     text-align: center;
     margin-left: 20px;
-    
+}
+#splogo{
+    height: 70px;
+    padding: 10px;
+    margin-left: 20px;
 }
 #logosp{
     margin-top: -17px;
@@ -82,12 +87,12 @@ body {
      margin-top: -60px;
  }
  form{
-     background-color: wheat;
+     background-color:white;
      margin-top: -18px;
-     padding: 40px;
+     padding: 35px;
      
  } 
- #amtbtn, #amtbtn1, #amtbtn2, #amtbtn3, #payment{
+ #amtbtn, #amt, #clickVal, #amtbtn1, #amtbtn2, #amtbtn3, #payment{
     background-color: grey;
     color: white;
 }
@@ -101,14 +106,14 @@ body {
     padding-bottom: 4rem;
 }
 .footer {
-    width: 80%;
+    width: 100%;
     height: 40vh;
     background-color: black;
     color: white;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     padding-top: 4rem;
 }
 .footer-heading {
@@ -126,8 +131,17 @@ body {
 }
 .footer-heading a:hover {
     color: red;
-    transition: 0.5s ease-out;
+    transition: 0.5
 }
+#footer-email-btn {
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: blueviolet;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1rem;
 
 @media screen and (max-width:1150px) {
     .footer{
@@ -149,4 +163,5 @@ body {
     .footer-email-form{
         margin-top: 2rem;
     }
+}
 }
