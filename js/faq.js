@@ -1,0 +1,25 @@
+$(document).ready(function(){
+    $("#consentheader").click(function(){
+        $('#consent').toggle();
+    });
+});
+$(document).ready(function(){
+    $("#consentQheader").click(function(){
+        $('#consentQ').toggle();
+    });
+});
+$(document).ready(function(){
+    $("#helpheader").click(function(){
+        $('#help').toggle();
+    });
+});
+$(document).ready(function(){
+    $("#anonymousheader").click(function(){
+        $('#anonymous').toggle();
+    });
+});
+$(document).ready(function(){
+    $("#talkheader").click(function(){
+        $('#talk').toggle();
+    });
+});
