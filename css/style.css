@@ -12,6 +12,11 @@ body {
     background-color: black;
     color: white;
 }
+#splogo{
+    height: 70px;
+    padding: 10px;
+    margin-left: 20px;
+}
 .logo_container {
     color: white;
 }
