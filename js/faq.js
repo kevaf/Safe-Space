@@ -4,22 +4,22 @@ $(document).ready(function(){
     });
 });
 $(document).ready(function(){
-    $("#consenQtheader").click(function(){
+    $("#consentQheader").click(function(){
         $('#consentQ').toggle();
     });
 });
 $(document).ready(function(){
-    $("#helptheader").click(function(){
+    $("#helpheader").click(function(){
         $('#help').toggle();
     });
 });
 $(document).ready(function(){
-    $("anonymousheader").click(function(){
+    $("#anonymousheader").click(function(){
         $('#anonymous').toggle();
     });
 });
 $(document).ready(function(){
-    $("talkheader").click(function(){
+    $("#talkheader").click(function(){
         $('#talk').toggle();
     });
 });

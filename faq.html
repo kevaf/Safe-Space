@@ -1,103 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/faq.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>FAQS</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/faq.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <!--header section starts-->
-<header>
-  <div class="header">
-      <div class="inner_header">
-          <div class="logo_container">
-              <h1>SAFE <span>SPACE</span></h1>
-          </div>
-          <ul class="navigation">
-              <a><li>HOME</li></a>
-              <a><li>FAQ</li></a>
-              <a><li>REPORT</li></a>
-              <a><li>DONATION</li></a>
-          </ul>
-      </div>
+<div class="header">
+    <div class="logo_container">
+        <h1>SAFE <span>SPACE</span></h1>
+    </div>
+    <div class="navigation">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">REPORT</a></li>
+            <li><a href="#">DONATION</a></li>
+        </ul>
+    </div>
   </div>
-</header>
-<!--header section ends!-->
+  <!--header section ends!-->
+
 <body>
- <div class="consent">
-     <h4 id="consentheader">What is consent? &nbsp&nbsp&nbsp&nbsp <i class="fas fa-angle-down"></i></h4>
-     <p id="consent">“Consent” means words or overt actions by a person who is competent to give informed consent, indicating a freely given agreement to engage in  sexual activity or other activity referenced in the definitions of sexual assault and sexual exploitation in this section.  A person is unable to give consent if the person is in a state of incapacitation because of drugs, alcohol, physical or intellectual disability, or unconsciousness.
-    </p>
-    <div class="consentQ">
-      <h4 id="consentQheader">Something happened to me and I think I’ve been sexually assaulted. How do I know? &nbsp&nbsp&nbsp&nbsp <i class="fas fa-angle-down"></i></h4>
-      <p id="consentQ">“Sexual Assault” means an offense that meets any of the following definitions:
-
-        “Rape” means the penetration, no matter how slight, of the vagina or anus with any body part or object, or oral penetration by a sex organ of the complainant, without the consent of the complainant.
-        “Fondling” means the touching of the private body parts of the complainant for the purpose of sexual gratification, without the consent of the complainant, including instances where the complainant is incapable of giving consent because of the complainant’s age or because of the complainant’s temporary or permanent mental incapacity.
-        “Incest” means sexual intercourse between persons who are related to each other within the degrees wherein marriage is prohibited by law as provided in s. 944.06, Stats.
-         “Statutory rape” means sexual intercourse with a complainant who is under the statutory age of consent as provided in s. 948.02, Stats.</p>
-  </div>
- </div>
- <div class="help">
-  <h4 id="helpheader">I’ve experienced sexual violence. Where can I go for help?
-    &nbsp&nbsp&nbsp&nbsp <i class="fas fa-angle-down"></i></h4>
-  <p id="help">If you or someone you know is in danger or needs immediate help, call 911.
-
-    If you or someone you know has experienced sexual violence or harassment but are not in immediate danger, find support and services </p>
-</div>
-<div class="anonymous">
-  <h4 id="anonymoustheader">I’ve experienced sexual violence. Can I report anonymously?
-    &nbsp&nbsp&nbsp&nbsp <i class="fas fa-angle-down"></i></h4>
-  <p id="anonymous">If you or someone you know is in danger or needs immediate help, call 911.Most institutions, police departments, and community agencies will allow you to submit an anonymous report.  However, please be aware that filing an anonymous report may limit the actions the organization can take on your behalf.</p>
-</div>
-<div class="talk">
-  <h4 id="talkheader">I just want to talk to someone, and I don’t want to file a report, or I’m not ready to decide if I want to report yet. Can I still get help?&nbsp&nbsp&nbsp&nbsp <i class="fas fa-angle-down"></i></h4>
-  <p id="talk">Yes. Your Safe Space provides information concerning those employees and resources who can maintain confidentiality.</p>
-
-
-
-</div>
-
-
-<script src="js/faq.js"></script>
-<!--footer section starts-->
-<footer>
-  <div class="footer-container">
-      <div class="footer">
-          <div class="footer-heading footer-1">
-              <h2>ABOUT US</h2>
-              <a href="#">Blog</a>
-              <a href="#">Contacts</a>
-              <a href="#">Investors</a>
-              <a href="#">Terms of Service</a>
+    <h1 class="text-center">Frequently Asked Questions &nbsp&nbsp (FAQs)</h1>
+    <div class="jumbotron"id="box">
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <strong>I just want to talk to someone, and I don’t want to file a report, or I’m not ready to decide if
+                I want to report yet. Can I still get help?</Strong>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              YES you can.  Your Safe Space provides information concerning those employees and resources who can maintain
+              confidentiality. 
+            </div>
           </div>
-          <div class="footer-heading footer-2">
-              <h2>CONTACT US </h2>
-              <a href="#">Jobs</a>
-              <a href="#">Support</a>
-              <a href="#">Contact</a>
-              <a href="#">Sponsorship</a>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <strong>Something happened to me and I think I’ve been sexually assaulted. How do I know?</strong>     
+
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                Sexual Assault” means an offense that meets any of the following definitions: “Rape” means the penetration, no matter how slight, of the vagina or anus with any body part or object, or oral penetration by a sex organ of the complainant, without the consent of the complainant.<br> “Fondling” means the touching of the private body parts of the complainant for the purpose of sexual gratification, without the consent of the complainant, including instances where the complainant is incapable of giving consent because of the complainant’s age or because of the complainant’s temporary or permanent mental incapacity.<br> “Incest” means sexual intercourse between persons who are related to each other within the degrees wherein marriage is prohibited by law. “Statutory rape” means sexual intercourse with a complainant who is under the statutory age of consent.
+            </div>
           </div>
-          <div class="footer-heading footer-3">
-              <h2>SOCIAL MEDIA</h2>
-              <a href="#">Instagram</a>
-              <a href="#">Twitter</a>
-              <a href="#">Facebook</a>
-              <a href="#">Youtube</a>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <strong>I’ve experienced sexual violence. Where can I go for help?</strong>
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                If you or someone you know is in danger or needs immediate help, call 911. If you or someone you know has experienced sexual violence or harassment but are not in immediate danger, find support and services
+            </div>
           </div>
-          <div class="footer-email-form">
-              <h2>Join our organization</h2>
-              <input type="email" placeholder="Enter your email address" id="footer-email">
-              <input type="submit" value="Sign up" id="footer-email-btn">
-          </div>
+        </div>
       </div>
-  </div>
-</footer>
-<!--footer section ends-->
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  <!--footer section starts-->
+  <footer>
+    <div class="footer-container">
+      <div class="footer">
+        <div class="footer-heading footer-1">
+          <h2>ABOUT US</h2>
+          <a href="#">Blog</a>
+          <a href="#">Contacts</a>
+          <a href="#">Investors</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-heading footer-2">
+          <h2>CONTACT US </h2>
+          <a href="#">Jobs</a>
+          <a href="#">Support</a>
+          <a href="#">Contact</a>
+          <a href="#">Sponsorship</a>
+        </div>
+        <div class="footer-heading footer-3">
+          <h2>SOCIAL MEDIA</h2>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">Facebook</a>
+          <a href="#">Youtube</a>
+        </div>
+        <div class="footer-email-form">
+          <h2>Join our organization</h2>
+          <input type="email" placeholder="Enter your email address" id="footer-email">
+          <input type="submit" value="Sign up" id="footer-email-btn">
+        </div>
+      </div>
+    </div>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </footer>
+  <!--footer section ends-->
 </body>
+
 </html>
